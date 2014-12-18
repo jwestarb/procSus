@@ -4,7 +4,7 @@ Aplicativo Móvel ProcSUS
 
 ### What is this repository for? ###
 
-* Quick summary
+* Desenvolvido com IONIC Framework.
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
@@ -16,14 +16,3 @@ Aplicativo Móvel ProcSUS
 * Database configuration
 * How to run tests
 * Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
