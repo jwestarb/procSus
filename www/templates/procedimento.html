@@ -1,0 +1,70 @@
+<ion-view title="Procedimento">
+  <ion-content class="has-header">
+    
+  	<ul class="list">
+
+    	<li class="item proc-item">
+    	  	<h3 class="positive">Código:</h3>
+        	<p>{{proc.co_proc_formatado}}</p>
+    	</li>
+	    <li class="item proc-item">
+	    	<h3 class="positive">Descrição:</h3>
+    		<p>{{proc.no_procedimento}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Complexidade:</h3>
+    		<p>{{proc.ds_complexidade}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Tipo de Financiamento:</h3>
+    		<p>{{proc.ds_financiamento}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Instrumento de Registro:</h3>
+            <p ng-repeat="reg in proc.tp_registros" class="proc-text">{{reg.no_registro}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Sexo:</h3>
+    		<p>{{proc.ds_sexo}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Média de Permanência:</h3>
+    		<p>{{proc.qt_dias_permanencia}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Tempo de Permanência:</h3>
+    		<p>{{proc.qt_tempo_permanencia}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Quantidade Máxima:</h3>
+    		<p>{{proc.qt_maxima_execucao}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Idade Mínima:</h3>
+    		<p>{{proc.vl_idade_minima}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Idade Máxima:</h3>
+    		<p>{{proc.vl_idade_maxima}}</p>
+    	</li>
+		<li class="item proc-item">
+	    	<h3 class="positive">Pontos:</h3>
+    		<p>{{proc.qt_pontos}}</p>
+    	</li>
+
+        <li class="item proc-item">
+            <h3 class="positive">Valores:</h3>
+            <p class="proc-text">Serviço Ambulatorial: {{proc.vl_sa}}</p>
+            <p class="proc-text">Serviço Hospitalar: {{proc.vl_sh}}</p>
+            <p class="proc-text">Serviço Profissional: {{proc.vl_sp}}</p>
+        </li>
+
+        <li class="item proc-item">
+            <h3 class="positive">CID:</h3>
+            <p ng-repeat="cid in proc.cids_pri" class="proc-text"><b>{{cid.co_cid}}</b> - {{cid.no_cid}}</p>
+        </li>
+
+	</ul>
+    
+  </ion-content>
+</ion-view>

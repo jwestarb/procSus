@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="br.com.jcwj.procsus" version="0.0.2" android-versionCode="2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>procSus</name>
+  <description>
+        Procedimentos do SUS
+    </description>
+  <author email="jwestarb@gmail.com" href="http://www.atualizatabwin.com.br/">
+      Julio Cesar Westarb Junior
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+
+  <platform name="android">
+    <icon src="res/android/drawable-mdpi/ic_launcher.png" />
+    <icon src="res/android/drawable-mdpi/ic_launcher.png" density="mdpi" />
+    <icon src="res/android/drawable-hdpi/ic_launcher.png" density="hdpi" />
+    <icon src="res/android/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+    <icon src="res/android/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" />
+  </platform>
+
+</widget>

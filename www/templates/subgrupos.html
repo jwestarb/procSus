@@ -1,0 +1,10 @@
+<ion-view title="Sub-Grupos">
+  <ion-content class="has-header">
+    <h4>{{nomeGrupo}}</h4>
+    <ion-list class="item-text-wrap">
+      <ion-item ng-repeat="subGrupo in subGrupos" href="#/app/formas/{{grupoId}}/{{$index}}">
+        <span class="positive"><b>{{subGrupo.co_grupo}}.{{subGrupo.co_sub_grupo}}</b></span> - {{subGrupo.no_sub_grupo}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

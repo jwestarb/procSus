@@ -1,0 +1,13 @@
+<ion-view title="Formas de Organização">
+  <ion-content class="has-header">
+    <h4>{{nomeSubGrupo}}</h4>
+
+    <ion-list class="item-text-wrap">
+    
+      <ion-item ng-repeat="forma in formas" href="#/app/procedimentos/{{grupoId}}/{{subGrupoId}}/{{$index}}">
+        <span class="positive"><b>{{forma.co_grupo}}.{{forma.co_sub_grupo}}.{{forma.co_forma_organizacao}}</b></span> - {{forma.no_forma_organizacao}}
+      </ion-item>
+  
+    </ion-list>
+  </ion-content>
+</ion-view>

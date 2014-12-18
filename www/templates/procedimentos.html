@@ -1,0 +1,14 @@
+<ion-view title="Procedimentos">
+  <ion-content class="has-header">
+    <h5><b>{{nomeForma}}</b></h5>
+
+    <ion-list class="item-text-wrap">
+    
+      <ion-item ng-repeat="proc in procedimentos" href="#/app/procedimento/{{proc.co_procedimento}}">
+      	<p><span class="positive"><b>{{proc.co_proc_formatado}}</b></span> - {{proc.no_procedimento}}</p>
+      </ion-item>
+  
+    </ion-list>
+
+  </ion-content>
+</ion-view>

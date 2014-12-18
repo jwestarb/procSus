@@ -1,0 +1,12 @@
+<ion-view title="Grupos">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list class="item-text-wrap">
+      <ion-item ng-repeat="grupo in grupos" href="#/app/subgrupos/{{$index}}">
+        <span class="positive"><b>{{grupo.co_grupo}}</b></span> - {{grupo.no_grupo}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
