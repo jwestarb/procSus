@@ -60,21 +60,27 @@
     </li>
 
     <li class="item proc-item">
-        <h3 class="positive">CID Primário:</h3>
+        <h3 class="positive"><b>CID Primário:</b></h3>
         <p ng-hide="proc.cids_pri">Não há CID-10 relacionado.</p>
         <p ng-repeat="cid_pri in proc.cids_pri" class="proc-text"><b>{{cid_pri.co_cid}}</b> - {{cid_pri.no_cid}}</p>
     </li>
 
     <li class="item proc-item">
-      <h3 class="positive">CID Secundário:</h3>
+      <h3 class="positive"><b>CID Secundário:</b></h3>
       <p ng-hide="proc.cids_sec">Não há CID-10 relacionado.</p>
       <p ng-repeat="cid_sec in proc.cids_sec" class="proc-text"><b>{{cid_sec.co_cid}}</b> - {{cid_sec.no_cid}}</p>
     </li>
 
     <li class="item proc-item">
-      <h3 class="positive">CBO (Ocupação):</h3>
+      <h3 class="positive"><b>CBO (Ocupação):</b></h3>
       <p ng-hide="proc.cbo">Não há CBO relacionado.</p>
       <p ng-repeat="cbo in proc.cbo" class="proc-text"><b>{{cbo.co_ocupacao}}</b> - {{cbo.no_ocupacao}}</p>
+    </li>
+
+    <li class="item proc-item">
+      <h3 class="positive"><b>Habilitação:</b></h3>
+      <p ng-hide="proc.habi">Não há Habilitação relacionada.</p>
+      <p ng-repeat="hab in proc.habi" class="proc-text"><b>{{hab.co_habilitacao}}</b> - {{hab.no_habilitacao}}</p>
     </li>
 
 	</ul>
