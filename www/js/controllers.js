@@ -39,7 +39,7 @@ angular.module('infoSus.controllers', [])
         $scope.grupos = data;
         window.grupos = data;
     });
-  
+
 })
 
 .controller('SubGruposCtrl', function($scope, $http, $stateParams) {
@@ -74,16 +74,17 @@ angular.module('infoSus.controllers', [])
           filtro.co_forma_organizacao = data[$stateParams.grupoId].sub_grupos[$stateParams.subGrupoId].formas_organizacao[$stateParams.formaId].co_forma_organizacao;
           $scope.procedimentos = $filter('filter')(window.PROCEDIMENTOS, filtro, true);
     });
-      
+
 })
 
 .controller('ProcedimentoCtrl', function($scope, $http, $filter, $stateParams) {
     filtro = {};
+    $scope.panel = 1;
     $scope.proc = {};
     $http.get('lib/procs/' + $stateParams.coProcedimento + '.json').success(function(data) {
-      $scope.proc = data[0]          
+      $scope.proc = data[0]
     });
-      
+
 })
 
 .controller('BuscaCtrl', function($scope, $http, $stateParams, $filter, $ionicScrollDelegate) {
@@ -94,7 +95,7 @@ angular.module('infoSus.controllers', [])
     $scope.adicionaMaisItens = function() {
         $scope.procsFiltro = $filter('filter')(window.PROCEDIMENTOS, $scope.textoBusca);
         if ($scope.procsFiltro.length > $scope.numeroItensMostrar) {
-          $scope.numeroItensMostrar += 20; 
+          $scope.numeroItensMostrar += 20;
         }
         $scope.$broadcast('scroll.infiniteScrollComplete');
     };
