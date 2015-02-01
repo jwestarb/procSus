@@ -1,5 +1,5 @@
 <ion-view title="Procedimento">
-  <ion-content class="has-header">
+  <ion-content class="has-header" has-bouncing="true">
 
   	<ul class="list item-text-wrap">
 
@@ -62,9 +62,9 @@
 
     <div style="padding-bottom: 0">
       <div class="button-bar">
-        <a class="button button-small" ng-click="panel=1">CID</a>
-        <a class="button button-small" ng-click="panel=2">CBO</a>
-        <a class="button button-small" ng-click="panel=3">Habilitação</a>
+        <a class="button button-small" ng-class="{ 'button-positive': panel===1 }" ng-click="panel=1">CID</a>
+        <a class="button button-small" ng-class="{ 'button-positive': panel===2 }" ng-click="panel=2">CBO</a>
+        <a class="button button-small" ng-class="{ 'button-positive': panel===3 }" ng-click="panel=3">Habilitação</a>
       </div>
     </div>
 
